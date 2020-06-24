@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+<head>
+	<meta charset="UTF-8">
+	<title>login</title>
+	<link href="https://cdn.bootcdn.net/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+	<style rel="stylesheet" type="text/css">
+        div {
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            background: radial-gradient(closest-corner, #bfdafd, #dedede)
+        }
+
+        .z3 {
+            width: 0;
+            height: 0;
+            border-top: 260px solid transparent;
+            border-bottom: 260px solid transparent;
+            border-left: 336px solid rgba(255,255,255,.8);
+	        filter: blur(3px);
+        }
+
+        .z1 {
+            width: 0;
+            height: 0;
+            border-top: 139px solid transparent;
+            border-bottom: 139px solid transparent;
+            border-right: 180px solid #16224B;
+	        transform: rotateZ(-2deg);
+	        z-index: 1;
+        }
+        .z2 {
+            width: 0;
+            height: 0;
+            border-top: 140px solid transparent;
+            border-bottom: 140px solid transparent;
+            border-right: 180px solid #142F5B;
+	        transform: rotateZ(-5deg);
+	        z-index: 2;
+	        /*overflow: hidden;*/
+        }
+        .z2:after{
+            content: '';
+            display: block;
+            width: 12px;
+            height: 227px;
+            background: linear-gradient(90deg,rgba(230,230,230,.9), rgba(230,230,230,0));
+            transform: rotateZ(-52.1deg) translateX(91px) translateY(40px);
+        }
+	</style>
+</head>
+<body class="body">
+<div class="z1"></div>
+<div class="z2"></div>
+<div class="z3"></div>
+<!--<form action="/login" method="post">-->
+<!--	<label for="username">username</label>-->
+<!--	<input type="text" name="username" id="username">-->
+<!--	<br>-->
+<!--	<label for="password">password</label>-->
+<!--	<input type="password" name="password" id="password">-->
+<!--	<button type="submit">login</button>-->
+<!--</form>-->
+</body>
+</html>
